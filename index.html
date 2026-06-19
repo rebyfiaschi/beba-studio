@@ -4,133 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEBA-STUDIO</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />  
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    
   </head>
   <body>
-    <div class="page">
-      <div class="nav">
+    <div class="page flex flex-col bg-[#fbf7ed] text-[#111318] font-[Koulen-Regular] w-full">
+      <div class="nav flex items-center justify-between md:px-[80px] px-[50px] py-6 md:text-5xl text-[20px]">
         <div class="nav-item">BEBA-STUDIO</div>
         <div class="nav-item">PORTFOLIO</div>
         <div class="nav-item">MENU</div>
       </div>
 
-      <div class="hero">
-        <div class="main-title">BEBA-STUDIO</div>
-        <div class="hero-photo"></div>
+      <div class="hero flex items-center justify-center flex-col w-full ">
+        <div class="main-title text-[#ff91a8] md:text-[250px] text-[80px] font-[Brunson] md:px-[80px] px-[20px] ">BEBA-STUDIO</div>
+        <video class="hero-photo rounded-2xl md:h-[900px] h-[700px] object-[0%_90%] object-cover w-full md:px-[80px] px-[0px]" muted loop>
+          <source src="assets/video/videobeba.MOV" type="video/mp4">
+        </video>
       </div>
 
-      <div class="about block-padding">
-        <div class="about-title">[. ABOUT ME ]</div>
-        <div class="about-copy">
-          <div>
-            Ciao! Sono REBECCA FIASCHI, una graphic designer laureata alla LABA - Libera Accademia di Belle Arti, dove ho conseguito una laurea triennale in Graphic Design. Trasformo idee in identità visive attraverso design, tipografia e creatività digitale. Creo progetti dal carattere forte e contemporaneo — dal branding ai contenuti editoriali fino alle esperienze web — sempre con l’obiettivo di dare personalità e impatto a ogni dettaglio.
+      <div class="about flex flex-col md:px-[80px] px-[20px] mt-[50px]">
+        <div class="about-title md:text-[128px] text-[50px] flex gap-[40px]"> <img class="w-[75px]" src="assets/svg/asterisco.svg" alt="ABOUT ME">[. ABOUT ME] </div>
+        <div class="about-copy text-xl ">
+          <div class="text-justify indent-[100px] lao">
+            Ciao! Sono REBECCA FIASCHI, una <span class="text-[#ff91a8]">graphic designer</span> laureata alla LABA - Libera Accademia di Belle Arti, dove ho conseguito una laurea triennale in Graphic Design. Trasformo idee in identità visive attraverso <span class="text-[#ff91a8]">design, tipografia e creatività digitale.</span> Creo progetti dal carattere forte e contemporaneo — dal branding ai contenuti editoriali fino alle esperienze web — sempre con l’obiettivo di dare personalità e impatto a ogni dettaglio.
           </div>
-          <div>
-            Sono appassionata di comunicazione visiva e di tutto ciò che riesce a unire estetica ed emozione. Mi piace sviluppare progetti che raccontano una storia autentica, combinando immaginazione, equilibrio e ricerca visiva. Che si tratti di un’identità di brand, di una campagna creativa o di un progetto artistico, punto a creare design capaci di lasciare un segno.
+          <br>
+          <div class="text-justify lao">
+            Sono appassionata di comunicazione visiva e di tutto ciò che riesce a unire estetica ed emozione. Mi piace sviluppare progetti che raccontano una storia autentica, combinando immaginazione, equilibrio e ricerca visiva. Che si tratti di un’ <span class="text-[#ff91a8]">identità di brand</span>, di una <span class="text-[#ff91a8]"> campagna creativa o di un progetto artistico </span>, punto a creare design capaci di lasciare un segno.
           </div>
-        </div>
-      </div>
-
-      <div class="pink-band">
-        <div class="chips-row chips-top">
-          <div class="chip">After Effects</div>
-          <div class="chip">Figma</div>
-        </div>
-        <div class="claim-wrapper">
-          <div class="claim-line">I CREATE ENGAGING</div>
-          <div class="claim-mid">
-            <div class="chip chip-floating">Photoshop</div>
-            <div class="claim-line">VISUAL</div>
-            <div class="chip chip-floating">Premier</div>
-          </div>
-          <div class="claim-bottom">
-            <div class="claim-line">PROJECTS</div>
-            <div class="script">with vision</div>
-          </div>
-        </div>
-        <div class="chips-row chips-bottom">
-          <div class="chip">Procreate</div>
-          <div class="chip">Indesign</div>
-          <div class="chip">Illustrator</div>
         </div>
       </div>
 
-      <div class="skills-section block-padding">
-        <div class="manifesto">
-          <div>LE</div>
-          <div>MIE</div>
-          <div>SKILLS</div>
-          <div>UNISCONO</div>
-          <div>ESTETICA</div>
-          <div></div>
-          <div>EQUILIBRIO</div>
-          <div>E</div>
-          <div></div>
-          <div>DIREZIONE</div>
-          <div>CREATIVA.</div>
-          <div></div>
+      <div class="pink-band w-full flex items-center justify-center md:px-[0px] px-[20px] bg-[#ffc3cc] mt-[60px] relative md:py-[160px] py-[100px]">
+          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao  md:top-[78px] md:left-[78px]">After Effects</div>
+          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[94px] md:left-[80%]">Figma</div>
+           <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[293px] md:left-[295px]">Photoshop</div>
+            <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[384px] md:left-[920px]">Premier</div>
+            <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[596px] md:left-[90px]">Procreate</div>
+          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[629px] md:left-[467px]">Indesign</div>
+          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[588px] md:left-[825px]">Illustrator</div>
+        <div class="claim-wrapper flex flex-col w-full justify-center items-center gap-2 ">
+          <h6 class="text-center md:text-[150px] text-[100px] font-[Koulen-Regular] leading-none"> I CREATE ENGAGING <br> VISUAL <br> PROJECTS <span class="labelle">with vision</span></h6>
         </div>
-        <div class="skills-list">
-          <div class="skill-row">
+      </div>
+
+      <div class="skills-section md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex justify-between md:flex-row flex-col gap-[40px]">
+        <div class="manifesto w-full">
+          <h6 class="md:text-[85px] text-[50px] text-justify uppercase md:leading-[99px] leading-none"> Le mie skills uniscono estetica equilibrio e direzione creativa.</h6>
+        </div>
+        <div class="skills-list w-full flex flex-col gap-[20px] ">
+          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black">
             <div>BRANDING</div>
             <div>+</div>
           </div>
-          <div class="skill-row">
+          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black">
             <div>TYPOGRAPHY</div>
             <div>+</div>
           </div>
-          <div class="skill-row">
+          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black  ">
             <div>VISUAL SYSTEM</div>
             <div>+</div>
           </div>
-          <div class="skill-row">
+          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black">
             <div>ART DIRECTION</div>
             <div>+</div>
           </div>
         </div>
       </div>
 
-      <div class="ticker">
+      <div class="ticker flex items-center justify-between w-full text-[36px] overflow-hidden text-nowrap gap-[20px] ">
         <div>PERSONAL WORKS</div>
-        <div>B</div>
+        <div class="text-[#ff91a8]">B</div>
         <div>PERSONAL WORKS</div>
-        <div>B</div>
+        <div class="text-[#ff91a8]">B</div>
         <div>PERSONAL WORKS</div>
-        <div>B</div>
+        <div class="text-[#ff91a8]">B</div>
         <div>PERSONAL WORKS</div>
       </div>
 
-      <div class="portfolio block-padding">
-        <div class="work-grid">
-          <div class="work-img img-portrait"></div>
-          <div class="work-img img-dancer"></div>
-          <div class="work-img img-sea"></div>
-          <div class="work-img img-concert"></div>
-          <div class="work-img img-jellyfish"></div>
+      <div class="portfolio md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex flex-col md:gap-[50px] gap-[25px] items-center">
+        <div class="work-grid w-full flex flex-col gap-[25px]"> 
+        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px] ">
+          <div class="md:w-[70%] w-full h-[550px] md:h-auto"><img src="./assets/img/hoda.jpg" alt="hoda" class="object-cover w-full h-full object-left "></div> <div class="md:w-[30%] w-full h-[550px] md:h-auto"><img src="./assets/img/vale.jpg" alt="vale" class="object-cover w-full h-full "></div>
+        </div>
+         <div class="flex gap-[25px] w-full md:max-h-[550px]">
+          <div class="w-full h-[550px] md:h-auto"><img src="./assets/img/vecchietti.jpg" alt="vecchietti" class="object-cover w-full h-full object-[20%_0] md:object-[0_70%] "></div>
+        </div>
+         <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px]">
+          <div class="md:w-[30%] w-full h-[550px] md:h-auto "><img src="./assets/img/olly.jpeg" alt="olly" class="object-cover w-full h-full"></div> <div class="md:w-[70%] w-full h-[550px] md:h-auto"><img src="./assets/img/meduse.jpeg" alt="meduse" class="object-cover w-full h-full  "></div>
+        </div>
         </div>
         <div class="button-row">
-          <div class="fake-button">VIEW ALL PROJECTS</div>
+          <div class="fake-button bg-[#111318] text-[#fbf7ed] py-[20px] px-[40px] mt-[40px] rounded-[20px] lao text-[20px] hover:bg-[#ff91a8] hover:text-[#111318] duration-700 cursor-pointer">VIEW ALL PROJECTS</div>
         </div>
       </div>
 
-      <div class="footer block-padding">
-        <div class="footer-col footer-left">
-          <div class="footer-title">CONTACTS</div>
-          <div>+39 3896690217</div>
+      <div class="footer grid md:grid-cols-3 w-full justify-between md:px-[80px] px-[20px] gap-y-[20px]">
+        <div class="w-full flex flex-col gap-[20px] ">
+          <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] ">CONTACTS</div>
+          <div class="lao text-[30px]"><div>+39 3896690217</div>
           <div>reby.fiaschi@gmail.com</div>
-          <div>Ravenna, Italia</div>
+          <div>Ravenna, Italia</div></div>
         </div>
-        <div class="footer-col footer-center">
-          <div class="footer-title">PORTFOLIO</div>
+        <div class="w-full flex flex-col gap-[20px]">
+          <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] flex md:justify-center">PORTFOLIO</div>
         </div>
-        <div class="footer-col footer-right">
-          <div class="footer-title">FOLLOW ME</div>
-          <div>@rrebeccafiaschi ◎</div>
-          <div>Beba Fiaschi in</div>
+        <div class="w-full flex flex-col gap-[20px] flex flex-col md:items-end">
+          <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] flex md:justify-end">FOLLOW ME</div>
+          <div class="lao text-[30px] flex flex-col md:items-end"><div class="flex justify-end items-center gap-[10px] md:flex-row flex-row-reverse ">@rrebeccafiaschi <img src="./assets/svg/insta.svg" class="w-[30px] h-[30px]" alt=""></div>
+          <div class="flex justify-end items-center gap-[10px] flex-row-reverse md:flex-row">Beba Fiaschi <img src="./assets/svg/linkedin.svg" class="w-[30px] h-[30px]" alt=""></div></div>
         </div>
       </div>
 
-      <div class="bottom-title">BEBA-STUDIO</div>
+     <div class="main-title text-[#ff91a8] md:text-[250px] text-[80px] font-[Brunson] flex justify-center mt-[160px]">BEBA-STUDIO</div>
     </div>
   </body>
 </html>
