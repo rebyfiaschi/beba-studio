@@ -1,126 +1,572 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BEBA-STUDIO</title>
-    <link rel="stylesheet" href="style.css" />  
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-    <div class="page flex flex-col bg-[#fbf7ed] text-[#111318] font-[Koulen-Regular] w-full">
-      <div class="nav flex items-center justify-between md:px-[80px] px-[50px] py-6 md:text-5xl text-[20px]">
-        <div class="nav-item">BEBA-STUDIO</div>
-        <div class="nav-item">PORTFOLIO</div>
-        <div class="nav-item">MENU</div>
-      </div>
 
-      <div class="hero flex items-center justify-center flex-col w-full ">
-        <div class="main-title text-[#ff91a8] md:text-[250px] text-[80px] font-[Brunson] md:px-[80px] px-[20px] ">BEBA-STUDIO</div>
-        <video class="hero-photo rounded-2xl md:h-[900px] h-[700px] object-[0%_90%] object-cover w-full md:px-[80px] px-[0px]" muted loop>
-          <source src="assets/video/videobeba.MOV" type="video/mp4">
-        </video>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEBA-STUDIO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
-      <div class="about flex flex-col md:px-[80px] px-[20px] mt-[50px]">
-        <div class="about-title md:text-[128px] text-[50px] flex gap-[40px]"> <img class="w-[75px]" src="assets/svg/asterisco.svg" alt="ABOUT ME">[. ABOUT ME] </div>
-        <div class="about-copy text-xl ">
-          <div class="text-justify indent-[100px] lao">
-            Ciao! Sono REBECCA FIASCHI, una <span class="text-[#ff91a8]">graphic designer</span> laureata alla LABA - Libera Accademia di Belle Arti, dove ho conseguito una laurea triennale in Graphic Design. Trasformo idee in identità visive attraverso <span class="text-[#ff91a8]">design, tipografia e creatività digitale.</span> Creo progetti dal carattere forte e contemporaneo — dal branding ai contenuti editoriali fino alle esperienze web — sempre con l’obiettivo di dare personalità e impatto a ogni dettaglio.
-          </div>
-          <br>
-          <div class="text-justify lao">
-            Sono appassionata di comunicazione visiva e di tutto ciò che riesce a unire estetica ed emozione. Mi piace sviluppare progetti che raccontano una storia autentica, combinando immaginazione, equilibrio e ricerca visiva. Che si tratti di un’ <span class="text-[#ff91a8]">identità di brand</span>, di una <span class="text-[#ff91a8]"> campagna creativa o di un progetto artistico </span>, punto a creare design capaci di lasciare un segno.
-          </div>
-        </div>
-      </div>
+</head>
 
-      <div class="pink-band w-full flex items-center justify-center md:px-[0px] px-[20px] bg-[#ffc3cc] mt-[60px] relative md:py-[160px] py-[100px]">
-          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao  md:top-[78px] md:left-[78px]">After Effects</div>
-          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[94px] md:left-[80%]">Figma</div>
-           <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[293px] md:left-[295px]">Photoshop</div>
-            <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[384px] md:left-[920px]">Premier</div>
-            <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[596px] md:left-[90px]">Procreate</div>
-          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[629px] md:left-[467px]">Indesign</div>
-          <div class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[588px] md:left-[825px]">Illustrator</div>
-        <div class="claim-wrapper flex flex-col w-full justify-center items-center gap-2 ">
-          <h6 class="text-center md:text-[150px] text-[100px] font-[Koulen-Regular] leading-none"> I CREATE ENGAGING <br> VISUAL <br> PROJECTS <span class="labelle">with vision</span></h6>
-        </div>
-      </div>
+<body>
+  <div class="page flex flex-col bg-[#fbf7ed] text-[#111318] font-[Koulen-Regular] w-full">
+    <div class="overflow-hidden">
+      <nav
+        class=" animate-[navItemFromTop_800ms_cubic-bezier(0.22,1,0.36,1)_both] transition-colors duration-500 ease-out nav flex items-center justify-between md:px-[80px] px-[50px] py-6 md:text-5xl text-[20px]">
+        <a href="#" class="nav-item inline-block hover:text-[#ff91a8]">
+          BEBA-STUDIO
+        </a>
 
-      <div class="skills-section md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex justify-between md:flex-row flex-col gap-[40px]">
-        <div class="manifesto w-full">
-          <h6 class="md:text-[85px] text-[50px] text-justify uppercase md:leading-[99px] leading-none"> Le mie skills uniscono estetica equilibrio e direzione creativa.</h6>
-        </div>
-        <div class="skills-list w-full flex flex-col gap-[20px] ">
-          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black">
-            <div>BRANDING</div>
-            <div>+</div>
-          </div>
-          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black">
-            <div>TYPOGRAPHY</div>
-            <div>+</div>
-          </div>
-          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black  ">
-            <div>VISUAL SYSTEM</div>
-            <div>+</div>
-          </div>
-          <div class="skill-row flex justify-between border-b text-[50px] text-[#ff91a8] border-black">
-            <div>ART DIRECTION</div>
-            <div>+</div>
-          </div>
-        </div>
-      </div>
+        <a href="#portfolio" class="nav-item inline-block hover:text-[#ff91a8]">
+          PORTFOLIO
+        </a>
 
-      <div class="ticker flex items-center justify-between w-full text-[36px] overflow-hidden text-nowrap gap-[20px] ">
-        <div>PERSONAL WORKS</div>
-        <div class="text-[#ff91a8]">B</div>
-        <div>PERSONAL WORKS</div>
-        <div class="text-[#ff91a8]">B</div>
-        <div>PERSONAL WORKS</div>
-        <div class="text-[#ff91a8]">B</div>
-        <div>PERSONAL WORKS</div>
-      </div>
+        <button id="openMenu" class="nav-item cursor-pointer transition-colors duration-300 hover:text-[#ff91a8]"
+          type="button">
+          MENU
+        </button>
 
-      <div class="portfolio md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex flex-col md:gap-[50px] gap-[25px] items-center">
-        <div class="work-grid w-full flex flex-col gap-[25px]"> 
-        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px] ">
-          <div class="md:w-[70%] w-full h-[550px] md:h-auto"><img src="./assets/img/hoda.jpg" alt="hoda" class="object-cover w-full h-full object-left "></div> <div class="md:w-[30%] w-full h-[550px] md:h-auto"><img src="./assets/img/vale.jpg" alt="vale" class="object-cover w-full h-full "></div>
-        </div>
-         <div class="flex gap-[25px] w-full md:max-h-[550px]">
-          <div class="w-full h-[550px] md:h-auto"><img src="./assets/img/vecchietti.jpg" alt="vecchietti" class="object-cover w-full h-full object-[20%_0] md:object-[0_70%] "></div>
-        </div>
-         <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px]">
-          <div class="md:w-[30%] w-full h-[550px] md:h-auto "><img src="./assets/img/olly.jpeg" alt="olly" class="object-cover w-full h-full"></div> <div class="md:w-[70%] w-full h-[550px] md:h-auto"><img src="./assets/img/meduse.jpeg" alt="meduse" class="object-cover w-full h-full  "></div>
-        </div>
-        </div>
-        <div class="button-row">
-          <div class="fake-button bg-[#111318] text-[#fbf7ed] py-[20px] px-[40px] mt-[40px] rounded-[20px] lao text-[20px] hover:bg-[#ff91a8] hover:text-[#111318] duration-700 cursor-pointer">VIEW ALL PROJECTS</div>
-        </div>
-      </div>
-
-      <div class="footer grid md:grid-cols-3 w-full justify-between md:px-[80px] px-[20px] gap-y-[20px]">
-        <div class="w-full flex flex-col gap-[20px] ">
-          <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] ">CONTACTS</div>
-          <div class="lao text-[30px]"><div>+39 3896690217</div>
-          <div>reby.fiaschi@gmail.com</div>
-          <div>Ravenna, Italia</div></div>
-        </div>
-        <div class="w-full flex flex-col gap-[20px]">
-          <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] flex md:justify-center">PORTFOLIO</div>
-        </div>
-        <div class="w-full flex flex-col gap-[20px] flex flex-col md:items-end">
-          <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] flex md:justify-end">FOLLOW ME</div>
-          <div class="lao text-[30px] flex flex-col md:items-end"><div class="flex justify-end items-center gap-[10px] md:flex-row flex-row-reverse ">@rrebeccafiaschi <img src="./assets/svg/insta.svg" class="w-[30px] h-[30px]" alt=""></div>
-          <div class="flex justify-end items-center gap-[10px] flex-row-reverse md:flex-row">Beba Fiaschi <img src="./assets/svg/linkedin.svg" class="w-[30px] h-[30px]" alt=""></div></div>
-        </div>
-      </div>
-
-     <div class="main-title text-[#ff91a8] md:text-[250px] text-[80px] font-[Brunson] flex justify-center mt-[160px]">BEBA-STUDIO</div>
+      </nav>
     </div>
-  </body>
+
+    <div class="hero max-w-[1440px] mx-auto flex items-center justify-center flex-col w-full ">
+      <div data-animate-class="fade-up" data-delay="700"
+        class="main-title text-[#ff91a8] md:text-[300px] text-[80px] font-[Brunson] md:px-[50px] px-[20px] reveal ">
+        BEBA-STUDIO</div>
+      <video data-animate-class="fade-up" data-delay="1000"
+        class="hero-photo reveal rounded-2xl md:h-[900px] h-[700px] object-[0%_90%] object-cover w-full md:px-[80px] px-[0px]"
+        muted loop>
+        <source src="assets/video/videobeba.MOV" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="about flex flex-col md:px-[80px] px-[20px] mt-[50px] max-w-[1440px] mx-auto">
+      <div class="about-title md:text-[128px] text-[50px] flex gap-[40px]">
+        <img class="w-[75px] reveal" data-animate-class="roll-in-left" data-delay="1000" src="assets/svg/asterisco.svg"
+          alt="ABOUT ME" />
+
+        <span class="reveal" data-animate-class="fade-up" data-delay="200">
+          [. ABOUT ME]
+        </span>
+      </div>
+
+      <div class="about-copy text-xl">
+        <div class="text-justify indent-[100px] lao reveal" data-animate-class="fade-up" data-delay="500">
+          Ciao! Sono REBECCA FIASCHI, una
+          <span class="text-[#ff91a8]">graphic designer</span> laureata alla
+          LABA - Libera Accademia di Belle Arti, dove ho conseguito una laurea
+          triennale in Graphic Design. Trasformo idee in identità visive
+          attraverso
+          <span class="text-[#ff91a8]">
+            design, tipografia e creatività digitale.
+          </span>
+          Creo progetti dal carattere forte e contemporaneo — dal branding ai
+          contenuti editoriali fino alle esperienze web — sempre con l’obiettivo
+          di dare personalità e impatto a ogni dettaglio.
+        </div>
+
+        <br />
+
+        <div class="text-justify lao reveal" data-animate-class="fade-up" data-delay="500">
+          Sono appassionata di comunicazione visiva e di tutto ciò che riesce
+          a unire estetica ed emozione. Mi piace sviluppare progetti che
+          raccontano una storia autentica, combinando immaginazione,
+          equilibrio e ricerca visiva. Che si tratti di un’
+          <span class="text-[#ff91a8]">identità di brand</span>, di una
+          <span class="text-[#ff91a8">
+            campagna creativa o di un progetto artistico
+          </span>,
+          punto a creare design capaci di lasciare un segno.
+        </div>
+      </div>
+    </div>
+
+    <div data-animate-class="fade-up" data-delay="200"
+      class="pink-band w-full flex items-center justify-center md:px-[0px] px-[20px] bg-[#ffc3cc] mt-[60px] relative md:py-[160px] py-[100px] reveal">
+      <div data-animate-class="fade-up" data-delay="2000"
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[78px] md:left-[78px] reveal text-lg">
+        After Effects</div>
+      <div data-animate-class="fade-up" data-delay="2600"
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[94px] md:left-[80%] reveal text-lg">
+        Figma</div>
+      <div data-animate-class="fade-up" data-delay="2400"    
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[293px] md:left-[295px] reveal text-lg">
+        Photoshop</div>
+      <div  data-animate-class="fade-up" data-delay="2800"
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[384px] md:right-[400px] reveal text-lg">
+        Premier</div>
+      <div  data-animate-class="fade-up" data-delay="3000"
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[596px] md:left-[90px] reveal text-lg">
+        Procreate</div>
+      <div data-animate-class="fade-up" data-delay="2200"
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[629px] md:left-[700px] reveal text-lg">
+        Indesign</div>
+      <div data-animate-class="fade-up" data-delay="3200"
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[600px] md:right-[200px] reveal text-lg">
+        Illustrator</div>
+      <div class="claim-wrapper flex flex-col w-full justify-center items-center gap-2 ">
+        <h6 data-animate-class="fade-up" data-delay="400" class="text-center md:text-[150px] text-[100px] font-[Koulen-Regular] leading-none reveal"> I CREATE ENGAGING <br>
+          VISUAL <br> PROJECTS <span class="labelle">with vision</span></h6>
+      </div>
+    </div>
+
+    <div
+      class="skills-section max-w-[1440px] mx-auto md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex justify-between md:flex-row flex-col gap-[40px]">
+      <div class="manifesto w-full">
+        <h6 class="md:text-[85px] text-[50px] text-justify uppercase md:leading-[99px] leading-none  transition-colors duration-500 ease-out"> 
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out "> Le</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> mie</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> skills</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> uniscono</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> estetica</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> equilibrio</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> e</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> direzione</span>
+          <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out"> creativa.</span>
+          </h6>
+      </div>
+      <div class="skills-list flex w-full flex-col gap-[20px]">
+        <div class="skill-row border-b border-black">
+          <button class="accordion-trigger flex w-full items-center justify-between text-[50px] text-[#ff91a8]"
+            type="button">
+            <span>BRANDING</span>
+            <span class="accordion-icon transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              +
+            </span>
+          </button>
+
+          <div
+            class="accordion-panel max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] lao">
+            <div
+              class="translate-y-3 pb-8 pt-3 text-[18px] leading-relaxed text-black text-justify transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              Progetto identità visive che combinano estetica, coerenza e personalità, trasformando idee e concetti in
+              linguaggi visivi moderni e riconoscibili. <br />
+              Ogni brand nasce da un equilibrio tra ricerca creativa, comunicazione visiva e attenzione ai dettagli, con
+              l’obiettivo di costruire un’immagine forte, contemporanea e capace di lasciare un impatto visivo chiaro e
+              distintivo nel tempo.
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-row border-b border-black">
+          <button class="accordion-trigger flex w-full items-center justify-between text-[50px] text-[#ff91a8]"
+            type="button">
+            <span>TYPOGRAPHY</span>
+            <span class="accordion-icon transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              +
+            </span>
+          </button>
+
+          <div
+            class="accordion-panel max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] lao">
+            <div
+              class="translate-y-3 pb-8 pt-3 text-[18px] leading-relaxed text-black text-justify transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              Il mio stile tipografico si basa su un approccio minimal e moderno, dove equilibrio, pulizia e
+              composizione diventano elementi fondamentali del design. Utilizzo la tipografia per creare gerarchie
+              visive chiare e trasformare ogni layout in un’esperienza estetica contemporanea ed essenziale.
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-row border-b border-black">
+          <button class="accordion-trigger flex w-full items-center justify-between text-[50px] text-[#ff91a8]"
+            type="button">
+            <span>VISUAL SYSTEM</span>
+            <span class="accordion-icon transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              +
+            </span>
+          </button>
+
+          <div
+            class="accordion-panel max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] lao">
+            <div
+              class="translate-y-3 pb-8 pt-3 text-[18px] leading-relaxed text-black text-justify transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              Creo sistemi visivi ordinati, modulari e versatili che mantengono coerenza tra layout, immagini, colori e
+              contenuti. Ogni elemento viene progettato per costruire un linguaggio visivo chiaro, moderno ed efficace.
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-row border-b border-black">
+          <button class="accordion-trigger flex w-full items-center justify-between text-[50px] text-[#ff91a8]"
+            type="button">
+            <span>ART DIRECTION</span>
+            <span class="accordion-icon transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              +
+            </span>
+          </button>
+
+          <div
+            class="accordion-panel max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] lao">
+            <div
+              class="translate-y-3 pb-8 pt-3 text-[18px] leading-relaxed text-black text-justify transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              Sviluppo direzioni creative che uniscono concept, estetica e storytelling visivo. Dalla scelta delle
+              immagini alla composizione finale, ogni dettaglio viene pensato per trasmettere una visione creativa forte
+              e d’impatto.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker-js w-full overflow-hidden">
+      <div class="ticker-track flex w-max will-change-transform">
+        <div class="ticker-content flex shrink-0 items-center gap-[20px] pr-[20px] text-[36px] whitespace-nowrap">
+          <div>PERSONAL WORKS</div>
+          <div class="text-[#ff91a8]">B</div>
+          <div>PERSONAL WORKS</div>
+          <div class="text-[#ff91a8]">B</div>
+          <div>PERSONAL WORKS</div>
+          <div class="text-[#ff91a8]">B</div>
+          <div>PERSONAL WORKS</div>
+          <div class="text-[#ff91a8]">B</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio max-w-[1440px] mx-auto md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex flex-col md:gap-[50px] gap-[25px] items-center">
+      <div class="work-grid w-full flex flex-col gap-[25px]">
+
+        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px]">
+
+          <div class="group relative overflow-hidden md:w-[70%] w-full h-[550px] md:h-auto cursor-pointer">
+            <img src="./assets/img/hoda.jpg" alt="hoda"
+              class="object-cover w-full h-full object-left transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-[#FF99AD]/0 transition-colors duration-500 ease-out group-hover:bg-[#FF99AD]/50">
+            </div>
+
+            <div
+              class="absolute inset-0 flex items-start p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 lao">
+              <h3 class="text-white text-[32px] md:text-[42px]">
+                Name Project
+              </h3>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden md:w-[30%] w-full h-[550px] md:h-auto cursor-pointer">
+            <img src="./assets/img/vale.jpg" alt="vale"
+              class="object-cover w-full h-full transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-[#FF99AD]/0 transition-colors duration-500 ease-out group-hover:bg-[#FF99AD]/50">
+            </div>
+
+            <div
+              class="absolute inset-0 flex items-start p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 lao">
+              <h3 class="text-white text-[32px] md:text-[42px]">
+                Name Project
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex gap-[25px] w-full md:max-h-[550px]">
+
+          <div class="group relative overflow-hidden w-full h-[550px] md:h-auto cursor-pointer">
+            <img src="./assets/img/vecchietti.jpg" alt="vecchietti"
+              class="object-cover w-full h-full object-[20%_0] md:object-[0_70%] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-[#FF99AD]/0 transition-colors duration-500 ease-out group-hover:bg-[#FF99AD]/50">
+            </div>
+
+            <div
+              class="absolute inset-0 flex items-start p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 lao">
+              <h3 class="text-white text-[32px] md:text-[42px]">
+                Name Project
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px]">
+
+          <div class="group relative overflow-hidden md:w-[30%] w-full h-[550px] md:h-auto cursor-pointer">
+            <img src="./assets/img/olly.jpeg" alt="olly"
+              class="object-cover w-full h-full transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-[#FF99AD]/0 transition-colors duration-500 ease-out group-hover:bg-[#FF99AD]/50">
+            </div>
+
+            <div
+              class="absolute inset-0 flex items-start p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 lao">
+              <h3 class="text-white text-[32px] md:text-[42px]">
+                Name Project
+              </h3>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden md:w-[70%] w-full h-[550px] md:h-auto cursor-pointer">
+            <img src="./assets/img/meduse.jpeg" alt="meduse"
+              class="object-cover w-full h-full transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-[#FF99AD]/0 transition-colors duration-500 ease-out group-hover:bg-[#FF99AD]/50">
+            </div>
+
+            <div
+              class="absolute inset-0 flex items-start p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 lao">
+              <h3 class="text-white text-[32px] md:text-[42px]">
+                Name Project
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="button-row">
+        <div
+          class="fake-button bg-[#111318] text-[#fbf7ed] py-[20px] px-[40px] mt-[40px] rounded-[20px] lao text-[20px] hover:bg-[#ff91a8] hover:text-[#111318] duration-700 cursor-pointer">
+          VIEW ALL PROJECTS</div>
+      </div>
+    </div>
+
+    <div class="footer grid md:grid-cols-3 w-full justify-between md:px-[80px] px-[20px] gap-y-[20px]">
+      <div class="w-full flex flex-col gap-[20px] ">
+        <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] ">CONTACTS</div>
+        <div class="lao text-[30px]">
+          <div>+39 3896690217</div>
+          <div>reby.fiaschi@gmail.com</div>
+          <div>Ravenna, Italia</div>
+        </div>
+      </div>
+      <div class="w-full flex flex-col gap-[20px]">
+        <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] flex md:justify-center">PORTFOLIO
+        </div>
+      </div>
+      <div class="w-full flex flex-col gap-[20px] flex flex-col md:items-end">
+        <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] flex md:justify-end">FOLLOW ME</div>
+        <div class="lao text-[30px] flex flex-col md:items-end">
+          <div class="flex justify-end items-center gap-[10px] md:flex-row flex-row-reverse ">@rrebeccafiaschi <img
+              src="./assets/svg/insta.svg" class="w-[30px] h-[30px]" alt=""></div>
+          <div class="flex justify-end items-center gap-[10px] flex-row-reverse md:flex-row">Beba Fiaschi <img
+              src="./assets/svg/linkedin.svg" class="w-[30px] h-[30px]" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-title text-[#ff91a8] md:text-[300px] text-[80px] font-[Brunson] flex justify-center mt-[160px]">
+      BEBA-STUDIO</div>
+  </div>
+  <div id="menuOverlay"
+    class="text-[#111318] font-[Koulen-Regular] fixed left-0 top-0 z-50 h-screen w-full -translate-y-full bg-[#ff91a8] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+    <div class="flex items-center justify-between md:px-[80px] px-[50px] py-6 md:text-5xl text-[20px]">
+      <a href="#" class="transition-colors duration-300 hover:text-white">
+        BEBA-STUDIO
+      </a>
+
+      <button id="closeMenu" class="cursor-pointer transition-colors duration-300 hover:text-white" type="button">
+        CLOSE
+      </button>
+    </div>
+
+    <nav class="mt-[180px] flex flex-col gap-[35px] md:px-[80px] px-[50px]">
+      <a href="#about"
+        class="menu-link translate-y-8 opacity-0 text-[52px] md:text-[72px] leading-none transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-white">
+        ABOUT ME
+      </a>
+
+      <a href="#personal-works"
+        class="menu-link translate-y-8 opacity-0 text-[52px] md:text-[72px] leading-none transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-white">
+        PERSONAL WORKS
+      </a>
+
+      <a href="#projects"
+        class="menu-link translate-y-8 opacity-0 text-[52px] md:text-[72px] leading-none transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-white">
+        VIEW ALL PROJECTS
+      </a>
+    </nav>
+  </div>
+
+  <script>
+    const openMenu = document.querySelector("#openMenu");
+    const closeMenu = document.querySelector("#closeMenu");
+    const menuOverlay = document.querySelector("#menuOverlay");
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+    function showMenu() {
+      menuOverlay.classList.remove("-translate-y-full");
+      menuOverlay.classList.add("translate-y-0");
+
+      document.body.classList.add("overflow-hidden");
+
+      menuLinks.forEach((link, index) => {
+        setTimeout(() => {
+          link.classList.remove("translate-y-8", "opacity-0");
+          link.classList.add("translate-y-0", "opacity-100");
+        }, 250 + index * 120);
+      });
+    }
+
+    function hideMenu() {
+      menuOverlay.classList.remove("translate-y-0");
+      menuOverlay.classList.add("-translate-y-full");
+
+      document.body.classList.remove("overflow-hidden");
+
+      menuLinks.forEach((link) => {
+        link.classList.remove("translate-y-0", "opacity-100");
+        link.classList.add("translate-y-8", "opacity-0");
+      });
+    }
+
+    openMenu.addEventListener("click", showMenu);
+    closeMenu.addEventListener("click", hideMenu);
+
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", hideMenu);
+    });
+  </script>
+  <script>
+    const tickers = document.querySelectorAll(".ticker-js");
+
+    tickers.forEach((ticker) => {
+      const track = ticker.querySelector(".ticker-track");
+      const originalContent = ticker.querySelector(".ticker-content");
+
+      let speed = 0.3;
+      let position = 0;
+      let contentWidth = 0;
+      let animationFrame;
+
+      function setupTicker() {
+        cancelAnimationFrame(animationFrame);
+
+        track.innerHTML = "";
+        track.appendChild(originalContent);
+
+        const tickerWidth = ticker.offsetWidth;
+
+        contentWidth = originalContent.offsetWidth;
+
+        while (track.scrollWidth < tickerWidth * 2 + contentWidth) {
+          const clone = originalContent.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          track.appendChild(clone);
+        }
+
+        position = 0;
+        animate();
+      }
+
+      function animate() {
+        position -= speed;
+
+        if (Math.abs(position) >= contentWidth) {
+          position = 0;
+        }
+
+        track.style.transform = `translateX(${position}px)`;
+        animationFrame = requestAnimationFrame(animate);
+      }
+
+      setupTicker();
+
+      window.addEventListener("resize", setupTicker);
+    });
+  </script>
+  <script>
+    const accordionRows = document.querySelectorAll(".skill-row");
+
+    function closeAccordion(row) {
+      const panel = row.querySelector(".accordion-panel");
+      const icon = row.querySelector(".accordion-icon");
+      const content = panel.querySelector("div");
+
+      row.classList.remove("is-open");
+
+      panel.style.maxHeight = "0px";
+      panel.classList.remove("opacity-100");
+      panel.classList.add("opacity-0");
+
+      icon.classList.remove("rotate-45");
+      content.classList.add("translate-y-3");
+    }
+
+    function openAccordion(row) {
+      const panel = row.querySelector(".accordion-panel");
+      const icon = row.querySelector(".accordion-icon");
+      const content = panel.querySelector("div");
+
+      row.classList.add("is-open");
+
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.remove("opacity-0");
+      panel.classList.add("opacity-100");
+
+      icon.classList.add("rotate-45");
+      content.classList.remove("translate-y-3");
+    }
+
+    accordionRows.forEach((row) => {
+      const trigger = row.querySelector(".accordion-trigger");
+
+      trigger.addEventListener("click", () => {
+        const isOpen = row.classList.contains("is-open");
+
+        accordionRows.forEach((otherRow) => {
+          closeAccordion(otherRow);
+        });
+
+        if (!isOpen) {
+          openAccordion(row);
+        }
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      document
+        .querySelectorAll(".skill-row.is-open .accordion-panel")
+        .forEach((panel) => {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const animatedElements = document.querySelectorAll("[data-animate-class]");
+
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            const element = entry.target;
+            const animationClass = element.dataset.animateClass;
+            const delay = element.dataset.delay || 0;
+
+            element.style.animationDelay = `${delay}ms`;
+
+            animationClass.split(" ").forEach((className) => {
+              element.classList.add(className);
+            });
+
+            observer.unobserve(element);
+          });
+        },
+        {
+          threshold: 0.05,
+          rootMargin: "0px 0px -80px 0px",
+        }
+      );
+
+      animatedElements.forEach((element) => {
+        observer.observe(element);
+      });
+    });
+  </script>
+</body>
+
 </html>
