@@ -127,6 +127,9 @@
     transform: translateX(0);
   }
 }
+.hero-outline {
+  -webkit-text-stroke: 2px #ff91a8;
+}
 /*:root {
   --cream: #fbf7ed;
   --pink: #ff91a8;

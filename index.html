@@ -22,7 +22,7 @@
           BEBA-STUDIO
         </a>
 
-        <a href="#portfolio" class="nav-item inline-block hover:text-[#ff91a8]">
+        <a href="/index.html" class="nav-item inline-block hover:text-[#ff91a8]">
           PORTFOLIO
         </a>
 
@@ -34,18 +34,40 @@
       </nav>
     </div>
 
-    <div class="hero max-w-[1440px] mx-auto flex items-center justify-center flex-col w-full ">
-      <div data-animate-class="fade-up" data-delay="700"
-        class="main-title text-[#ff91a8] md:text-[300px] text-[80px] font-[Brunson] md:px-[50px] px-[20px] reveal ">
-        BEBA-STUDIO</div>
-      <video data-animate-class="fade-up" data-delay="1000"
-        class="hero-photo reveal rounded-2xl md:h-[900px] h-[700px] object-[0%_90%] object-cover w-full md:px-[80px] px-[0px]"
-        muted loop>
-        <source src="assets/video/videobeba.MOV" type="video/mp4">
-      </video>
-    </div>
+    <section class="relative h-[150vh]">
+        <div
+          class="sticky relative top-0 h-screen overflow-hidden flex items-center justify-center"
+        >
+          <h1
+            id="heroTitleFill"
+            class="absolute z-10 text-[#ff91a8] font-[Brunson] md:text-[300px] text-[80px] leading-none whitespace-nowrap will-change-transform top-0"
+          >
+            BEBA-STUDIO
+          </h1>
 
-    <div class="about flex flex-col md:px-[80px] px-[20px] mt-[50px] max-w-[1440px] mx-auto">
+          <h1
+            id="heroTitleOutline"
+            class="absolute z-30 font-[Brunson] md:text-[300px] text-[80px] leading-none whitespace-nowrap text-transparent pointer-events-none hero-outline will-change-transform top-0"
+          >
+            BEBA-STUDIO
+          </h1>
+          <video
+            id="heroVideo"
+            class="absolute top-100 z-20 rounded-2xl object-cover object-[0%_90%] w-[70vw] h-[100vh] will-change-transform"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="assets/video/videobeba.MOV" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+
+
+
+    <div class="about flex flex-col md:px-[80px] px-[20px] mt-[50px] max-w-[1440px] mx-auto" id="about">
       <div class="about-title md:text-[128px] text-[50px] flex gap-[40px]">
         <img class="w-[75px] reveal" data-animate-class="roll-in-left" data-delay="1000" src="assets/svg/asterisco.svg"
           alt="ABOUT ME" />
@@ -89,25 +111,25 @@
     <div data-animate-class="fade-up" data-delay="200"
       class="pink-band w-full flex items-center justify-center md:px-[0px] px-[20px] bg-[#ffc3cc] mt-[60px] relative md:py-[160px] py-[100px] reveal">
       <div data-animate-class="fade-up" data-delay="2000"
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[78px] md:left-[78px] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[78px] md:left-[78px]  top-[50px] left-[78px] reveal text-lg">
         After Effects</div>
       <div data-animate-class="fade-up" data-delay="2600"
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[94px] md:left-[80%] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[94px] md:left-[80%] top-[50px] left-[300px] reveal text-lg">
         Figma</div>
       <div data-animate-class="fade-up" data-delay="2400"    
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[293px] md:left-[295px] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[293px] md:left-[295px] top-[740px] left-[150px] reveal text-lg">
         Photoshop</div>
       <div  data-animate-class="fade-up" data-delay="2800"
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[384px] md:right-[400px] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[384px] md:right-[400px] top-[330px] right-[333px] reveal text-lg">
         Premier</div>
       <div  data-animate-class="fade-up" data-delay="3000"
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[596px] md:left-[90px] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[596px] md:left-[90px] top-[500px] left-[30px] reveal text-lg">
         Procreate</div>
       <div data-animate-class="fade-up" data-delay="2200"
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[629px] md:left-[700px] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[629px] md:left-[700px] top-[600px] left-[30px] reveal text-lg">
         Indesign</div>
       <div data-animate-class="fade-up" data-delay="3200"
-        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[600px] md:right-[200px] reveal text-lg">
+        class="chip py-[10px] px-[20px] bg-[#ffffffcc] border border-black rounded-[50px] absolute lao md:top-[600px] md:right-[200px] top-[600px] right-[30px] reveal text-lg">
         Illustrator</div>
       <div class="claim-wrapper flex flex-col w-full justify-center items-center gap-2 ">
         <h6 data-animate-class="fade-up" data-delay="400" class="text-center md:text-[150px] text-[100px] font-[Koulen-Regular] leading-none reveal"> I CREATE ENGAGING <br>
@@ -116,7 +138,7 @@
     </div>
 
     <div
-      class="skills-section max-w-[1440px] mx-auto md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex justify-between md:flex-row flex-col gap-[40px]">
+      class="skills-section max-w-[1440px] mx-auto md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex justify-between md:flex-row flex-col gap-[40px] reveal" data-animate-class="fade-up" data-delay="500">
       <div class="manifesto w-full">
         <h6 class="md:text-[85px] text-[50px] text-justify uppercase md:leading-[99px] leading-none  transition-colors duration-500 ease-out"> 
           <span class="hover:text-[#ff91a8] transition-colors duration-500 ease-out "> Le</span>
@@ -214,7 +236,7 @@
       </div>
     </div>
 
-    <div class="ticker-js w-full overflow-hidden">
+    <div class="ticker-js w-full overflow-hidden reveal" data-animate-class="fade-up" data-delay="500" id="works">
       <div class="ticker-track flex w-max will-change-transform">
         <div class="ticker-content flex shrink-0 items-center gap-[20px] pr-[20px] text-[36px] whitespace-nowrap">
           <div>PERSONAL WORKS</div>
@@ -230,10 +252,10 @@
     </div>
 
     <div
-      class="portfolio max-w-[1440px] mx-auto md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex flex-col md:gap-[50px] gap-[25px] items-center">
+      class="portfolio max-w-[1440px] mx-auto md:px-[80px] px-[20px] md:my-[80px] my-[40px] flex flex-col md:gap-[50px] gap-[25px] items-center" >
       <div class="work-grid w-full flex flex-col gap-[25px]">
 
-        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px]">
+        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px] reveal" data-animate-class="fade-up" data-delay="500">
 
           <div class="group relative overflow-hidden md:w-[70%] w-full h-[550px] md:h-auto cursor-pointer">
             <img src="./assets/img/hoda.jpg" alt="hoda"
@@ -268,8 +290,8 @@
           </div>
 
         </div>
-
-        <div class="flex gap-[25px] w-full md:max-h-[550px]">
+        
+        <div class="flex gap-[25px] w-full md:max-h-[550px] reveal" data-animate-class="fade-up" data-delay="500">
 
           <div class="group relative overflow-hidden w-full h-[550px] md:h-auto cursor-pointer">
             <img src="./assets/img/vecchietti.jpg" alt="vecchietti"
@@ -289,7 +311,7 @@
 
         </div>
 
-        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px]">
+        <div class="flex gap-[25px] w-full md:flex-row flex-col md:max-h-[550px] reveal" data-animate-class="fade-up" data-delay="500">
 
           <div class="group relative overflow-hidden md:w-[30%] w-full h-[550px] md:h-auto cursor-pointer">
             <img src="./assets/img/olly.jpeg" alt="olly"
@@ -326,14 +348,17 @@
         </div>
 
       </div>
-      <div class="button-row">
+      <div class="button-row reveal" data-animate-class="fade-up" data-delay="500">
         <div
           class="fake-button bg-[#111318] text-[#fbf7ed] py-[20px] px-[40px] mt-[40px] rounded-[20px] lao text-[20px] hover:bg-[#ff91a8] hover:text-[#111318] duration-700 cursor-pointer">
-          VIEW ALL PROJECTS</div>
+          <a href="/project.html" class="text-inherit no-underline">
+            VIEW ALL PROJECTS
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="footer grid md:grid-cols-3 w-full justify-between md:px-[80px] px-[20px] gap-y-[20px]">
+    <div class="footer grid md:grid-cols-3 w-full justify-between md:px-[80px] px-[20px] gap-y-[20px] reveal" data-animate-class="fade-up" data-delay="500">
       <div class="w-full flex flex-col gap-[20px] ">
         <div class="footer-title font-[Koulen-Regular] text-[48px] text-[#ff91a8] ">CONTACTS</div>
         <div class="lao text-[30px]">
@@ -373,17 +398,17 @@
     </div>
 
     <nav class="mt-[180px] flex flex-col gap-[35px] md:px-[80px] px-[50px]">
-      <a href="#about"
+      <a href="/index.html#about"
         class="menu-link translate-y-8 opacity-0 text-[52px] md:text-[72px] leading-none transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-white">
         ABOUT ME
       </a>
 
-      <a href="#personal-works"
+      <a href="/index.html#works"
         class="menu-link translate-y-8 opacity-0 text-[52px] md:text-[72px] leading-none transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-white">
         PERSONAL WORKS
       </a>
 
-      <a href="#projects"
+      <a href="/project.html"
         class="menu-link translate-y-8 opacity-0 text-[52px] md:text-[72px] leading-none transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-white">
         VIEW ALL PROJECTS
       </a>
@@ -567,6 +592,36 @@
       });
     });
   </script>
+  <script>
+      const video = document.getElementById("heroVideo");
+      const section = video.closest("section");
+
+      const titleFill = document.getElementById("heroTitleFill");
+      const titleOutline = document.getElementById("heroTitleOutline");
+
+      window.addEventListener("scroll", () => {
+        const rect = section.getBoundingClientRect();
+
+        const progress = Math.min(
+          Math.max(-rect.top / (section.offsetHeight - window.innerHeight), 0),
+          1,
+        );
+
+        const scale = 1 - progress * 0.3;
+        const translateY = -progress * 600;
+        const opacity = progress < 0.5 ? 1 : 1 - (progress - 0.5) * 2;
+        video.style.transform = `translateY(${translateY}px) scale(${scale})`;
+        video.style.opacity = opacity;
+        const startY = 0;
+        const endY = 80;
+
+        const titleY = startY + progress * (endY - startY);
+
+        titleFill.style.transform = `translateY(${titleY}px)`;
+        titleOutline.style.transform = `translateY(${titleY}px)`;
+      });
+    </script>
+
 </body>
 
 </html>
